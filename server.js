@@ -8,7 +8,9 @@ const cookieSession = require('cookie-session')
 const passport = require('passport')
 
 const app = express()
-
+app.get('/',(req,res)=>{
+    res.send('hi')
+})
 
 app.use(
     cookieSession({
