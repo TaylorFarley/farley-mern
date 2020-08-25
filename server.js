@@ -14,7 +14,7 @@ app.get('/',(req,res)=>{
 
 app.use(
     cookieSession({
-        maxAge: 30 * 24 * 60 * 60 *1000,
+        maxAge: 1 * 60 * 60 * 1000, //1 hour
         keys: [keys.cookieKey]
     })
 )
@@ -39,7 +39,7 @@ mongoose.connection.on('error', err => {
 
 
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 5000
 app.listen(PORT,()=>{
     console.log('runnin and runnin and runnin')
 })
