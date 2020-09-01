@@ -2,7 +2,8 @@
 //rentdering layer, the react layer
 //what components to show on the screen
 import React, { Component } from 'react'
-import { BrowserRouter, Route} from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
+import * as actions from '../actions'
 import Header from './Header'
 import {connect} from 'react-redux'
 import * as actions from '../actions'
